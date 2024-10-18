@@ -1,0 +1,23 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --color-primary-light: #5CD2C1;
+  --color-primary-dark: #3A9C8F;
+  --color-text-light: #2A8C7F;
+  --color-text-dark: #7EEEDD;
+  --color-background-light: #e6f3f0;
+}
+
+.dark {
+  --color-primary-light: #3A9C8F;
+  --color-primary-dark: #5CD2C1;
+  --color-text-light: #7EEEDD;
+  --color-text-dark: #2A8C7F;
+  --color-background-light: #1a202c;
+}
+
+body {
+  @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-white;
+}

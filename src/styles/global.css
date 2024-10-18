@@ -1,0 +1,34 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --color-primary-light: #5CD2C1;
+  --color-primary-dark: #3A9C8F;
+  --color-text-light: #2A8C7F;
+  --color-text-dark: #7EEEDD;
+  --color-background-light: #e6f3f0;
+}
+
+.dark {
+  --color-primary-light: #3A9C8F;
+  --color-primary-dark: #5CD2C1;
+  --color-text-light: #7EEEDD;
+  --color-text-dark: #2A8C7F;
+  --color-background-light: #1a202c;
+}
+
+body {
+  @apply bg-background-light dark:bg-gray-900 text-text-light dark:text-text-dark;
+}
+
+.app {
+  @apply min-h-screen flex flex-col;
+}
+
+/* Ensure content doesn't get hidden behind the footer */
+main {
+  padding-bottom: 4rem; /* Adjust this value based on your footer's height */
+}
+
+/* Add any additional global styles here */
